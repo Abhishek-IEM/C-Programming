@@ -1,1 +1,1 @@
-if(n%2!=0) n++;
+cout<<ans<<endl;
