@@ -63,6 +63,16 @@ void nthLevel(Node *root, int curr, int level)
     nthLevel(root->right, curr + 1, level); // right
 }
 
+void levelOrder(Node *root)
+{
+    int n = levels(root);
+    for (int i = 1; i <= n; i++)
+    {
+        nthLevelRev(root, 1, i);
+        cout << endl;
+    }
+}
+
 void nthLevelRev(Node *root, int curr, int level)
 {
     if (root == NULL)
@@ -76,15 +86,6 @@ void nthLevelRev(Node *root, int curr, int level)
     nthLevelRev(root->left, curr + 1, level);  // left
 }
 
-void levelOrder(Node *root)
-{
-    int n = levels(root);
-    for (int i = 1; i <= n; i++)
-    {
-        nthLevelRev(root, 1, i);
-        cout << endl;
-    }
-}
 
 void levelOrderQueue(Node *root)
 {
