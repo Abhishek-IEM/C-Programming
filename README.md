@@ -1,3 +1,3 @@
-# C++ Pratice Programs
+# C++ Practice Programs
 
 
